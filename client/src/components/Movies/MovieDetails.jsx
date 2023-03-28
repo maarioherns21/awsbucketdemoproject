@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom"
 import useHook from "../useHooks/useHooks"
+import  './Style.css'
 
 
 
@@ -26,13 +27,12 @@ if(!movie) return "Loading.."
 
 
     return (
-        <div>
-      <div>
+      <>
         <h1>{movie.name}</h1>
-        <img src={`${baseURL}${movie?.fileImage}`} alt={movie.name} style={{ height: "420px" , width:" 320px"}} />
+        <img className="img img-cover"  src={`${baseURL}${movie?.fileImage}`} alt={movie.name} />
         <button onClick={handleDelete}>Delete</button>
-      </div>
-        </div>
+      </>
+      
     )
 }
 
