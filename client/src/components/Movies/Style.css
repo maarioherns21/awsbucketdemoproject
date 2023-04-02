@@ -17,3 +17,11 @@
     object-fit: cover;
     object-position: right top;
   }
+
+  .text {
+    color: aliceblue;
+    
+  }
+  .text:hover {
+    color: aquamarine;
+  }
