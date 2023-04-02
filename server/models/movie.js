@@ -5,7 +5,7 @@ const moviesSchema = new Schema({
   name: String,
   body: String,
   creator: String,
-  fileImage: { type:String,  required: false },
+  fileImage: { type: String, required: false },
   likes: { type: [String], default: [] },
   comments: { type: [String], default: [] },
   createdAt: { type: Date, default: new Date() },
